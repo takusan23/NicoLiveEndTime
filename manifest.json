@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "NicoLiveEndTime",
+    "version": "1.0",
+    "description": "ニコニコ生放送が謎の改悪により枠の時間（残り時間）を表示しなくなったので表示する拡張機能",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://live2.nicovideo.jp/watch/*"
+            ],
+            "js": [
+                "endtime.js"
+            ]
+        }
+    ]
+}
