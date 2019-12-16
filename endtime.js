@@ -81,7 +81,7 @@ window.onload = function () {
                 //時間を出す
                 const hour = calc / 3600
                 //一桁のときは先頭に0を足す
-                let hourString = new String(hour)
+                let hourString = new String(parseInt(hour, 10))
                 if (hourString.length == 1) {
                     hourString = `0${hourString}`
                 }
